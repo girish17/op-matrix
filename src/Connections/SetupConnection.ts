@@ -873,7 +873,7 @@ export class SetupConnection extends CommandConnection {
     return `http://${url.host}/projects/${projectId}`;
   }
 
-  @botCommand("openproject add", {
+  @botCommand("op add", {
     help: "Bridge a OpenProject project to the room.",
     requiredArgs: ["url"],
     includeUserId: true,
@@ -906,7 +906,7 @@ export class SetupConnection extends CommandConnection {
     );
   }
 
-  @botCommand("openproject remove", {
+  @botCommand("op remove", {
     help: "Remove an OpenProject project connection from this room.",
     requiredArgs: ["url"],
     includeUserId: true,

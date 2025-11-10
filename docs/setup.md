@@ -236,7 +236,7 @@ In terms of API endpoints:
   - `/gitlab` for GitLab
   - `/jira` for JIRA
   - `/webhooks` for Generic Webhooks
-  - `/openproject` for OpenProject
+  - `/op` for OpenProject
   - `/figma` for Figma.
 - The `metrics` resource handles resources under `/metrics`.
 - The `provisioning` resource handles resources under `/v1/...`.

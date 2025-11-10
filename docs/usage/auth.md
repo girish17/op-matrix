@@ -82,7 +82,7 @@ have the endpoints required accessible from the internet. Authentication is requ
 
 You can log in to OpenProject via OAuth. Authentication is required when trying to bridge OpenProject into rooms.
 
-- Say `openproject login`, which will generate a unique URL.
+- Say `op login`, which will generate a unique URL.
 - Click the URL sent by the bot.
 - Follow the steps, ensuring you authenticate with the right user.
 - If all goes well, you will now be connected.

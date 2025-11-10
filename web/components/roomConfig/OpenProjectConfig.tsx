@@ -108,7 +108,7 @@ const ExistingConnectionConfig: FunctionComponent<{
           ref={commandPrefixRef}
           type="text"
           value={connection.config.commandPrefix}
-          placeholder="!openproject"
+          placeholder="!op"
         />
       </InputField>
       <EventHookList

@@ -6,7 +6,7 @@ import { BridgePermissionLevel } from "../config/Config";
 const log = new Logger("OpenProjectBotCommands");
 
 export class OpenProjectBotCommands extends AdminRoomCommandHandler {
-  @botCommand("openproject login", {
+  @botCommand("op login", {
     help: "Log in to OpenProject",
     category: Category.OpenProject,
     permissionLevel: BridgePermissionLevel.login,
@@ -21,7 +21,7 @@ export class OpenProjectBotCommands extends AdminRoomCommandHandler {
     await this.sendNotice(`Open ${url} to link your account to the bridge.`);
   }
 
-  @botCommand("openproject logout", {
+  @botCommand("op logout", {
     help: "Log out of OpenProject",
     category: Category.OpenProject,
     permissionLevel: BridgePermissionLevel.login,

@@ -280,7 +280,7 @@ export class OpenProjectConnection
       name: p.name,
       description: p.description.raw,
       url: p.project_url,
-      suggested_prefix: `!openproject ${p.identifier}`,
+      suggested_prefix: `!op ${p.identifier}`,
     }));
   }
   public get priority(): number {
@@ -330,7 +330,7 @@ export class OpenProjectConnection
       OpenProjectConnection.botCommands,
       OpenProjectConnection.helpMessage,
       ["openproject"],
-      "!openproject",
+      "!op",
       "openproject",
     );
     this.grantChecker = new OpenProjectGrantChecker(as, tokenStore);
