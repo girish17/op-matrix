@@ -27,6 +27,11 @@ We richly support the following integrations:
 
 Get started by reading [the setup guide](https://matrix-org.github.io/matrix-hookshot/latest/setup.html)!
 
+## Demo
+
+The following shows OpenProject integration:
+
+![demo](op-element-integration.gif)
 
 ## Documentation
 
