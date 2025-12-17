@@ -538,11 +538,7 @@ export class OpenProjectConnection
       workPackageToCacheState(workPackage),
       workPackage.id,
     );
-    if (this.state.events.includes("work_package:created")) {
-      // Don't send an event if we're going to anyway.
-      return;
-    }
-
+    
     const extraData = formatWorkPackageForMatrix(
       workPackage,
       this.config.baseURL,
@@ -621,11 +617,7 @@ export class OpenProjectConnection
     if (finalComment) {
       await client.addWorkPackageComment(workPackageId, finalComment);
     }
-    if (this.state.events.includes("work_package:updated")) {
-      // Don't send an event if we're going to anyway.
-      return;
-    }
-
+    
     const extraData = formatWorkPackageForMatrix(
       workPackage,
       this.config.baseURL,
